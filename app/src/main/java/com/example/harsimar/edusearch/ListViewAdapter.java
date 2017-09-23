@@ -76,31 +76,29 @@ import java.util.Locale;
             holder.population.setText(worldpopulationlist.get(position)
                     .getPopulation());
             // Set the results into ImageView
-            holder.flag.setImageResource(worldpopulationlist.get(position)
-                    .getFlag());
-            // Listen for ListView Item Click
-            view.setOnClickListener(new View.OnClickListener() {
 
-                @Override
-                public void onClick(View arg0) {
-                    // Send single item click data to SingleItemView Class
-                    Intent intent = new Intent(mContext, SingleItemView.class);
-                    // Pass all data rank
-                    intent.putExtra("rank",
-                            (worldpopulationlist.get(position).getRank()));
-                    // Pass all data country
-                    intent.putExtra("country",
-                            (worldpopulationlist.get(position).getCountry()));
-                    // Pass all data population
-                    intent.putExtra("population",
-                            (worldpopulationlist.get(position).getPopulation()));
-                    // Pass all data flag
-                    intent.putExtra("flag",
-                            (worldpopulationlist.get(position).getFlag()));
-                    // Start SingleItemView Class
-                    mContext.startActivity(intent);
-                }
-            });
+            // Listen for ListView Item Click
+//            view.setOnClickListener(new View.OnClickListener() {
+//
+//                @Override
+//                public void onClick(View arg0) {
+//                    // Send single item click data to SingleItemView Class
+//                    Intent intent = new Intent(mContext, SingleItemView.class);
+//                    // Pass all data rank
+//                    intent.putExtra("rank",
+//                            (worldpopulationlist.get(position).getRank()));
+//                    // Pass all data country
+//                    intent.putExtra("country",
+//                            (worldpopulationlist.get(position).getCountry()));
+//                    // Pass all data population
+//                    intent.putExtra("population",
+//                            (worldpopulationlist.get(position).getPopulation()));
+//                    // Pass all data flag
+//
+//                    // Start SingleItemView Class
+//                    mContext.startActivity(intent);
+//                }
+//            });
 
             return view;
         }

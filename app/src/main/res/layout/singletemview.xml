@@ -8,7 +8,7 @@
         android:id="@+id/ranklabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rank" />
+        android:text="ID  " />
 
     <TextView
         android:id="@+id/rank"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ranklabel"
-        android:text="Country" />
+        android:text="College  " />
 
     <TextView
         android:id="@+id/country"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/countrylabel"
-        android:text="population" />
+        android:text="Accreditation Body  " />
 
     <TextView
         android:id="@+id/population"
@@ -44,12 +44,5 @@
         android:layout_below="@+id/country"
         android:layout_toRightOf="@+id/populationlabel" />
 
-    <ImageView
-        android:id="@+id/flag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:background="#000000"
-        android:padding="1dp" />
 
 </RelativeLayout>
